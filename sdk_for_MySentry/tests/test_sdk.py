@@ -1,9 +1,9 @@
 import pytest
 
-from sdk_for_MySentry_pgk.sdk import ErrorLogSender
+from sdk_for_mysentry_pgk.sdk import ErrorLogSender
 
 
-class SdkTest:
+class TestSdk:
 
     def test_error_log_sender_init(self):
         app_id = 2
@@ -25,7 +25,7 @@ class SdkTest:
 
 
 def start_test():
-    sdk_test = SdkTest()
+    sdk_test = TestSdk()
     sdk_test.test_error_log_sender_init()
     sdk_test.test_error_log_sender_init_invalid_id()
     sdk_test.test_error_log_sender_init_invalid_token()
