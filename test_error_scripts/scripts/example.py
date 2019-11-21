@@ -12,4 +12,14 @@ def error_2():
     return 1/0
 
 
+@error_searcher
+def error_3():
+    a = '1'*'1'
+    return a
+
+
+error_1()
+
 error_2()
+
+error_3()
