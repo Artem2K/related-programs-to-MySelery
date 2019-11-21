@@ -1,18 +1,38 @@
-To work with this package, you need to register your application in the MySentry project and get your unique "id" 
-and "token". Install this library in the virtual environment of your project:
+# sdk_for_MySentry
 
-1. python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps MySentry-pkg-Artem2k==0.0.3 
+# Overview
+    Python 3.6.8
+    
+# Install
 
-2. pipenv install requests
+    $ git clone https://github.com/Artem2K/related-programs-to-MySelery/tree/master/sdk_for_MySentry
+    
+# Usage
+    
+    $ cd ProjectName
+    
+    $ pipenv install
+    
+    $ pipenv shell
+    
+    $ python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps For-MySentry-pkg-Artem2k==0.0.1
+    
+    $ http://127.0.0.1:8000/signup/ - registration
 
-3. Create the file "MySentrySettings" in the root folder of your project and fill it in the format:
+    $ http://127.0.0.1:8000/users/login/ - login
+    
+    $ http://127.0.0.1:8000/apps/register_app/ - register your app
+    
+    $ http://127.0.0.1:8000/apps/ - save "id' and "token"
+ 
+    $ pipenv touch MySentrySettings.py - example:
+        
+        https://github.com/Artem2K/related-programs-to-MySelery/blob/master/test_error_scripts/MySentrySettings.py
+    
+    $ .py: from sdk_for_MySentry_pgk.sdk import error_searcher - use the "@error_searcher" decorator in the 
 
-4. Settings = dict( 
-    id='your unique id'->int, 
-    token='your unique token'->str, 
-   )
+        places you need.
+        
+    
 
-5. To start collecting error statistics in the MySentry project database, use the "@error_searcher" decorator in the 
-places you need.
 
-6. use the "pytest tests/test_sdk.py" to run the tests

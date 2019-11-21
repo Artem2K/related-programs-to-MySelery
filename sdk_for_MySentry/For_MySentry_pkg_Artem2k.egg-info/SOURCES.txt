@@ -1,0 +1,10 @@
+README.md
+setup.py
+For_MySentry_pkg_Artem2k.egg-info/PKG-INFO
+For_MySentry_pkg_Artem2k.egg-info/SOURCES.txt
+For_MySentry_pkg_Artem2k.egg-info/dependency_links.txt
+For_MySentry_pkg_Artem2k.egg-info/top_level.txt
+sdk_for_mysentry_pgk/__init__.py
+sdk_for_mysentry_pgk/sdk.py
+tests/__init__.py
+tests/test_sdk.py

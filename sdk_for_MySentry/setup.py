@@ -1,11 +1,15 @@
 import setuptools
 
+requires = [
+    'requests>=2.22.0',
+]
+
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="MySentry-pkg-Artem2k", # Replace with your own username
-    version="0.0.3",
+    name="For-MySentry-pkg-Artem2k", # Replace with your own username
+    version="0.0.1",
     author="Artem2k",
     author_email="Artem2k@gamil.com",
     description="A small example package",
